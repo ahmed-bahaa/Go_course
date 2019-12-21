@@ -1,0 +1,18 @@
+We can build binaries to run cross platform easily using two
+env variables ,, one for processor arch and another one for the platform:
+
+ex //
+
+linux:
+go build -o hr.linux
+
+MAC:
+$ GOOS=darwin GOARCH=amd64 go build -o hr.darwin
+
+freebsd:
+$ GOOS=freebsd GOARCH=amd64 go build -o hr.freebsd
+
+
+for all architectures visit those links:
+https://golang.org/cmd/go/#hdr-Environment_variables
+https://golang.org/doc/install/source#environment
